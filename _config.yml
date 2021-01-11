@@ -1,0 +1,30 @@
+# Site settings
+title: BTC Standard Hashrate Token
+email: satoshi@1-b.tc
+url: https://1-b.tc
+description: "Liquidity for mining power"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Standard Hashrate Group
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url:  https://twitter.com/btcst2020
+  - title: reddit
+    url: https://www.reddit.com/user/BTCStandardHashrate
+  - title: telegram
+    url: https://t.me/BTCST_Community_EN
+  # - title: weibo
+  #   url: https://weibo.com/u/6174201660
+  - title: github
+    url: https://github.com/Standard-Hashrate-Group
+
+# Build settings
+markdown: kramdown
+permalink: pretty
