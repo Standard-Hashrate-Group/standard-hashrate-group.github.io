@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/index.less">
-  <title>Document</title>
-</head>
-<body>
-  <div>Hi!</div>
-  <script src="./scripts/index.ts"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./styles/lib.css" />
+    <link rel="stylesheet" href="./styles/index.less" />
+    <link rel="stylesheet" href="./styles/responsive.less" />
+    <title>BTCST</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="header-layout">
+          <a class="logo" href="/"> </a>
+
+          <div class="header-right">
+            <a class="launch-button" href="/">Launch</a>
+            <div class="nav-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="nav">
+        <div class="nav-layout">
+          <div class="nav-header">
+            <a href="#">Home</a>
+            <a href="#">BTCST</a>
+            <a href="#">Tau</a>
+            <a href="#">Milepost</a>
+            <a href="#">Members</a>
+          </div>
+          <div class="nav-footer">
+            <div class="nav-footer-nav">
+              <a target="_blank" href="http://btcst.gitbook.io/faqs">FAQ</a>
+              <a target="_blank" href="http://vote.btcst.finance">VOTE</a>
+              <a target="_blank" href="http://btcst.gitbook.io">DOC</a>
+              <a href="/">SUPPORT</a>
+            </div>
+            <div class="nav-footer-links footer-links">
+              <a class="telegram" href="/"></a>
+              <a class="twitter" href="/"></a>
+              <a class="medium" href="/"></a>
+              <a class="reddit" href="/"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <article class="full-page-slider">
+        <div class="swiper-wrapper">
+          <include src="src/views/home.html"></include>
+          <include src="src/views/btcst.html"></include>
+          <include src="src/views/tau.html"></include>
+          <include src="src/views/milepost.html"></include>
+          <include src="src/views/member.html"></include>
+        </div>
+        <div class="full-page-slider-pagination"></div>
+      </article>
+      <footer class="footer section section--footer">
+        <div class="footer-layout">
+          <div class="footer-nav">
+            <a target="_blank" href="http://btcst.gitbook.io/faqs">FAQ</a>
+            <a target="_blank" href="http://vote.btcst.finance">VOTE</a>
+            <a target="_blank" href="http://btcst.gitbook.io">DOC</a>
+            <a href="/">SUPPORT</a>
+          </div>
+
+          <div class="footer-links">
+            <a class="telegram" href="/"></a>
+            <a class="twitter" href="/"></a>
+            <a class="medium" href="/"></a>
+            <a class="reddit" href="/"></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
