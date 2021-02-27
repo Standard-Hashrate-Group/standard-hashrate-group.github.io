@@ -5,11 +5,11 @@ export const fullPage = {
   hashNavigation: {
     replaceState: true,
   },
-  // effect: 'fade',
+  effect: 'fade',
   direction: 'vertical',
   slidesPerView: 1,
   mousewheel: true,
-  shortSwipes: false,
+  shortSwipes: true,
   speed: 500,
   pagination: {
     el: '.full-page-slider-pagination',

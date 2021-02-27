@@ -3,6 +3,7 @@
 @import './tau.less';
 @import './btcst.less';
 @import './milepost.less';
+@import './modal.less';
 
 @font-face {
   font-family: 'Manrope';
@@ -305,6 +306,7 @@ ul {
   position: absolute;
   bottom: 25px;
   width: 100%;
+  z-index: 100;
 
   span {
     background-image: url(../static/arrow-down.png);
@@ -312,15 +314,14 @@ ul {
     height: 32px;
     background-size: contain;
   }
-}
 
-.section--members {
-  .mobile-pagination {
-    span {
+  &.last {
+     span {
       transform: rotateX(180deg);
     }
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .section--home {
@@ -379,5 +380,7 @@ ul {
     }
   }
 
-
+  .modal__container { 
+    width: 80%;
+  }
 }
