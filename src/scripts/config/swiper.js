@@ -2,14 +2,14 @@
 import { NAV_LIST } from '../const';
 
 export const fullPage = {
-  hashNavigation: {
-    replaceState: true,
-  },
+  // hashNavigation: {
+  //   replaceState: true,
+  // },
   effect: 'fade',
   direction: 'vertical',
   slidesPerView: 1,
   mousewheel: true,
-  shortSwipes: true,
+  shortSwipes: false,
   speed: 500,
   pagination: {
     el: '.full-page-slider-pagination',

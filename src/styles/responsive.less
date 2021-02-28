@@ -1,5 +1,7 @@
 @media screen and (min-width: 1024px) {
   .header {
+    border-bottom: 0;
+    
     .header-layout {
       max-width: 1440px;
       padding-top: 56px;
@@ -35,7 +37,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    padding-bottom: 51px;
+    padding: 0 50px 50px;
 
     .footer-layout {
       max-width: 1440px;
@@ -49,12 +51,13 @@
       display: flex;
 
       a {
-        color: #343434;
+        color: #ffffff;
         margin-right: 42px;
         font-weight: 600;
+        opacity: .6;
 
         &:hover {
-          color: #ffffff;
+          opacity: 1;
         }
       }
     }
@@ -93,11 +96,15 @@
     height: initial !important;
     background-color: transparent !important;
     font-size: 14px;
-    opacity: 1;
-    color: #343434;
+    opacity: .5;
+    color: #ffffff;
 
     &.swiper-pagination-bullet-active {
-      color: #ffffff;
+      opacity: 1;
+
+      &:after {
+        opacity: 1;
+      }
     }
 
     &:after {
@@ -105,6 +112,7 @@
       width: 2px;
       height: 2px;
       background-color: #ffffff;
+      opacity: 1;
       border-radius: 50%;
     }
 

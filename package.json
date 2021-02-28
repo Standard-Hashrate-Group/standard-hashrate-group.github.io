@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@vimeo/player": "^2.15.0",
+    "axios": "^0.21.1",
     "jquery": "^3.5.1",
     "micromodal": "^0.4.6",
     "normalize.css": "^8.0.1",

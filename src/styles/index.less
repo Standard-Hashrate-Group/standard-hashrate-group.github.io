@@ -48,6 +48,7 @@ ul {
   z-index: 101;
   width: 100%;
   background-color: transparent;
+  border-bottom: 2px solid #343434;
 
   .header-layout {
     width: 100%;
@@ -194,6 +195,10 @@ ul {
   }
 }
 
+.section {
+  z-index: 1;
+}
+
 .footer {
   display: none;
 }
@@ -269,6 +274,9 @@ ul {
     width: 100%;
     z-index: -1;
     transform: translate3d(0, -50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-logo-img {
@@ -298,7 +306,6 @@ ul {
   }
 }
 
-
 .mobile-pagination {
   display: flex;
   align-items: center;
@@ -316,12 +323,11 @@ ul {
   }
 
   &.last {
-     span {
+    span {
       transform: rotateX(180deg);
     }
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .section--home {
@@ -380,7 +386,7 @@ ul {
     }
   }
 
-  .modal__container { 
+  .modal__container {
     width: 80%;
   }
 }

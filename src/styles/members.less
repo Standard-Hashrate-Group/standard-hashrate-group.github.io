@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     // justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 120px 0;
   }
 
   .members-overview {
@@ -74,12 +75,12 @@
 
       &:last-child {
         margin-bottom: 0;
-        a {
+        .item {
           margin-bottom: 0;
         }
       }
 
-      a {
+      .item {
         flex: 1;
         height: 15px;
         background-repeat: no-repeat;
@@ -135,7 +136,6 @@
     .section__layout {
       flex-direction: row;
       align-items: center;
-      padding: 0;
       justify-content: center;
       padding-right: 120px;
     }
@@ -162,11 +162,11 @@
     }
 
     .members-list {
-      margin-bottom: 75px;
+      // margin-bottom: 75px;
 
       .members-list-row {
         margin-bottom: 65px;
-        a {
+        .item {
           height: 26px;
           background-position: 0 center;
         }

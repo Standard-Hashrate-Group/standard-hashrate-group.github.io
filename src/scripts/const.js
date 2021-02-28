@@ -7,16 +7,16 @@ export const NAV_LIST = [
     name: 'BTCST',
     hash: 'btcst'
   },
+  // {
+  //   name: 'Tau',
+  //   hash: 'tau'
+  // },
   {
-    name: 'Tau',
-    hash: 'tau'
+    name: 'Stats',
+    hash: 'stats',
   },
   {
-    name: 'Milepost',
-    hash: 'milepost',
-  },
-  {
-    name: 'Members',
-    hash: 'members'
+    name: 'Partners',
+    hash: 'partners'
   }
 ];

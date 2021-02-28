@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
+    <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/lib.css" />
     <link rel="stylesheet" href="./styles/index.less" />
     <link rel="stylesheet" href="./styles/responsive.less" />
@@ -19,7 +20,9 @@
           <a class="logo" href="/"> </a>
 
           <div class="header-right">
-            <a class="launch-button" href="/">Launch</a>
+            <a class="launch-button" target="_blank" href="https://get.1-b.tc/"
+              >App</a
+            >
             <div class="nav-icon">
               <span></span>
               <span></span>
@@ -33,22 +36,41 @@
           <div class="nav-header">
             <a href="#">Home</a>
             <a href="#">BTCST</a>
-            <a href="#">Tau</a>
-            <a href="#">Milepost</a>
+            <!-- <a href="#">Tau</a> -->
+            <a href="#">Stats</a>
             <a href="#">Members</a>
           </div>
           <div class="nav-footer">
             <div class="nav-footer-nav">
-              <a target="_blank" href="http://btcst.gitbook.io/faqs">FAQ</a>
-              <a target="_blank" href="http://vote.btcst.finance">VOTE</a>
-              <a target="_blank" href="http://btcst.gitbook.io">DOC</a>
-              <a href="/">SUPPORT</a>
+              <a
+                target="_blank"
+                href="https://btcst.medium.com/btcst-faqs-january-2021-a016c64d115d"
+                >FAQ</a
+              >
+              <a target="_blank" href="http://vote.1-b.tc">VOTE</a>
+              <a href="mailto: support@btcst.zendesk.com">SUPPORT</a>
             </div>
             <div class="nav-footer-links footer-links">
-              <a class="telegram" href="/"></a>
-              <a class="twitter" href="/"></a>
-              <a class="medium" href="/"></a>
-              <a class="reddit" href="/"></a>
+              <a
+                target="_blank"
+                class="telegram"
+                href="https://t.me/BTCST_Community_EN"
+              ></a>
+              <a
+                target="_blank"
+                class="twitter"
+                href="https://twitter.com/btcst2020"
+              ></a>
+              <a
+                target="_blank"
+                class="medium"
+                href="http://btcst.medium.com/"
+              ></a>
+              <a
+                target="_blank"
+                class="reddit"
+                href="https://www.reddit.com/user/BTCStandardHashrate"
+              ></a>
             </div>
           </div>
         </div>
@@ -58,7 +80,7 @@
         <div class="swiper-wrapper">
           <include src="src/views/home.html"></include>
           <include src="src/views/btcst.html"></include>
-          <include src="src/views/tau.html"></include>
+          <!-- <include src="src/views/tau.html"></include> -->
           <include src="src/views/milepost.html"></include>
           <include src="src/views/member.html"></include>
         </div>
@@ -67,17 +89,36 @@
       <footer class="footer section section--footer">
         <div class="footer-layout">
           <div class="footer-nav">
-            <a target="_blank" href="http://btcst.gitbook.io/faqs">FAQ</a>
-            <a target="_blank" href="http://vote.btcst.finance">VOTE</a>
-            <a target="_blank" href="http://btcst.gitbook.io">DOC</a>
-            <a href="/">SUPPORT</a>
+            <a
+              target="_blank"
+              href="https://btcst.medium.com/btcst-faqs-january-2021-a016c64d115d"
+              >FAQ</a
+            >
+            <a target="_blank" href="http://vote.1-b.tc">VOTE</a>
+            <a href="mailto: support@btcst.zendesk.com">SUPPORT</a>
           </div>
 
           <div class="footer-links">
-            <a class="telegram" href="/"></a>
-            <a class="twitter" href="/"></a>
-            <a class="medium" href="/"></a>
-            <a class="reddit" href="/"></a>
+            <a
+              target="_blank"
+              class="telegram"
+              href="https://t.me/BTCST_Community_EN"
+            ></a>
+            <a
+              target="_blank"
+              class="twitter"
+              href="https://twitter.com/btcst2020"
+            ></a>
+            <a
+              target="_blank"
+              class="medium"
+              href="http://btcst.medium.com/"
+            ></a>
+            <a
+              target="_blank"
+              class="reddit"
+              href="https://www.reddit.com/user/BTCStandardHashrate"
+            ></a>
           </div>
         </div>
       </footer>
@@ -89,17 +130,15 @@
       aria-hidden="true"
     >
       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div
-          class="modal__container"
-          role="dialog"
-          aria-modal="true"
-        >
+        <div class="modal__container" role="dialog" aria-modal="true">
           <header class="modal__header">
             <button
               class="modal__close pause-video"
               aria-label="Close modal"
               data-micromodal-close
-            >X</button>
+            >
+              X
+            </button>
           </header>
           <main class="modal__content">
             <iframe
