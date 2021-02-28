@@ -44,12 +44,11 @@
 @media screen and (max-width: 768px) {
   .section--milepost {
     .section__layout {
+      margin: 0 40px;
     }
 
     .colorbox {
-      width: 288px;
       flex-direction: column;
-      padding-bottom: 76px;
       background: linear-gradient(
         114deg,
         #8ebfe9 0%,
@@ -57,7 +56,11 @@
         #abe2ba 100%
       );
       .boxitem {
-        padding-bottom: 0;
+        padding: 20px 0;
+
+        .num {
+          font-size: 30px;
+        }
       }
     }
   }

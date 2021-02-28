@@ -9,7 +9,7 @@ export const fullPage = {
   direction: 'vertical',
   slidesPerView: 1,
   mousewheel: true,
-  shortSwipes: false,
+  shortSwipes: true,
   speed: 500,
   pagination: {
     el: '.full-page-slider-pagination',
@@ -20,7 +20,8 @@ export const fullPage = {
   },
   breakpoints: {
     1024: {
-      shortSwipes: true,
+      shortSwipes: false,
+      // mousewheel: true,
     },
   },
 };

@@ -47,12 +47,12 @@ ul {
   right: 0;
   z-index: 101;
   width: 100%;
-  background-color: transparent;
+  background-color: #000000;
   border-bottom: 2px solid #343434;
 
   .header-layout {
     width: 100%;
-    padding: 24px;
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -307,7 +307,8 @@ ul {
 }
 
 .mobile-pagination {
-  display: flex;
+  display: none;
+  // display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -329,10 +330,26 @@ ul {
   }
 }
 
+.mobile-show {
+  display: none;
+}
+
+.mobile-hide {
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile-show {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
   .section--home {
     .section__layout {
-      padding: 120px 0;
+      padding: 120px 0 0 0;
       display: block;
     }
     .home-title {
