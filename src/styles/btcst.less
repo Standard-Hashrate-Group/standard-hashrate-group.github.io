@@ -1,0 +1,188 @@
+.section--btcst {
+  .section__layout {
+    // padding: 90px 40px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // justify-content: space-between;
+    // padding-bottom: 90px;
+    padding: 80px 0 20px 0;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../static/btcst-logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top center;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+
+  .btcst-overview {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-bottom: 40px;
+
+    .btcst-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btcst-second-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .btcst-content {
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+
+    .btcst-link {
+      display: flex;
+    }
+
+    .btcst-link-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 25px;
+
+      span {
+        background-color: #ffffff;
+        height: 2px;
+
+        &:nth-child(1) {
+          width: 24px;
+        }
+
+        &:nth-child(2) {
+          width: 16px;
+        }
+      }
+    }
+
+    .btcst-link-content {
+      font-size: 14px;
+      font-weight: lighter;
+    }
+  }
+
+  .btcst-detail {
+    display: none;
+  }
+
+  .btcst-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btcst-list-item {
+    .btcst-list-item-header {
+      cursor: pointer;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      margin-bottom: 26px;
+
+      .btcst-list-item-icon {
+        background-image: url(../static/plus@2x.png);
+        background-repeat: no-repeat;
+        width: 11px;
+        height: 11px;
+        background-size: contain;
+      }
+    }
+
+    .btcst-list-item-content {
+      margin-top: 17px;
+      margin-bottom: 20px;
+      display: none;
+      font-weight: 200;
+    }
+
+    &.active {
+      .btcst-list-item-header {
+        margin-bottom: 0;
+      }
+
+      .btcst-list-item-content {
+        display: block;
+      }
+
+      .btcst-list-item-header {
+        .btcst-list-item-icon {
+          background-image: url(../static/minus@2x.png);
+        }
+      }
+    }
+
+    &:last-child {
+      .btcst-list-item-content {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section--btcst {
+    .section__layout {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &:after {
+        // opacity: 1;
+        background-position: center;
+      }
+    }
+
+    .btcst-overview {
+      width: 40%;
+      margin-right: 100px;
+      margin-bottom: 0;
+
+      .btcst-second-title {
+        font-size: 24px;
+        margin-bottom: 37px;
+      }
+
+      .btcst-content {
+        margin-bottom: 59px;
+        font-size: 14px;
+      }
+    }
+
+    .btcst-list {
+      width: 300px;
+    }
+
+    .btcst-detail {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btcst-list-item {
+      .btcst-list-item-content {
+        margin-bottom: 96px;
+      }
+    }
+  }
+}
