@@ -1,0 +1,67 @@
+.section--milepost {
+  .section__layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colorbox {
+    max-width: 1008px;
+    width: 100%;
+    background: linear-gradient(
+      114deg,
+      #8ebfe9 0%,
+      #e8b5d6 48%,
+      #abe2ba 100%,
+      #d2f2db 100%
+    );
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+  }
+
+  .boxitem {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 63px 0 70px;
+    .num {
+      margin-top: 19px;
+      font-size: 40px;
+      font-weight: 600;
+      color: #000000;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section--milepost {
+    .section__layout {
+      margin: 0 40px;
+    }
+
+    .colorbox {
+      flex-direction: column;
+      background: linear-gradient(
+        114deg,
+        #8ebfe9 0%,
+        #e8b5d6 55%,
+        #abe2ba 100%
+      );
+      .boxitem {
+        padding: 20px 0;
+
+        .num {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

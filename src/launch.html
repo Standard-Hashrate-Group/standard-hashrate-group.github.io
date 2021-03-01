@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launching Soon</title>
+  <style>
+    body {
+      background: #000;
+      -webkit-font-smoothing: antialiased;
+      padding-top: 120px;
+    }
+    .title-soon {
+      font-size: 24px;
+      font-family: Manrope-SemiBold, Manrope;
+      font-weight: 600;
+      color: #fff;
+      line-height: 33px;
+      text-align: center;
+      margin: 52px 0 28px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      border: 1px dashed rgba(255, 255, 255, 0.5);
+    }
+    .time-group {
+      font-size: 12px;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .time-group .time-item {
+      padding: 0 16px;
+      text-align: center;
+      font-family: Manrope-ExtraLight_Regular, Manrope;
+    }
+    .time-group .time-num {
+      font-size: 40px;
+      font-family: Manrope-SemiBold, Manrope;
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1024px) {
+      body {
+        padding-top: 180px;
+      }
+      .logo {
+        width: 224px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="./static/launch-logo.png" alt="">
+  <div class="title-soon">Launching Soon</div>
+  <div class="time-group">
+    <div class="time-item">
+      <div id="countdown-day" class="time-num">10</div>
+      <div>Days</div>
+    </div>
+    <div class="time-item">
+      <div id="countdown-hour" class="time-num">00</div>
+      <div>Hours</div>
+    </div>
+    <div class="time-item">
+      <div id="countdown-minute" class="time-num">00</div>
+      <div>Minutes</div>
+    </div>
+    <div class="time-item">
+      <div id="countdown-second" class="time-num">00</div>
+      <div>Seconds</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var day = document.getElementById('countdown-day');
+      var hours = document.getElementById('countdown-hour');
+      var minute = document.getElementById('countdown-minute');
+      var second = document.getElementById('countdown-second');
+      var final = new Date(2021, 3, 1, 0);
+      function countdown() {
+        var offset = parseInt((final - Date.now()) / 1000, 10);
+        if (offset <= 0) {
+          day.innerText = hours.innerText = minute.innerText = second.innerText = '00';
+        } else {
+          second.innerText = offset % 60;
+          minute.innerText = parseInt(offset / 60, 10) % 60;
+          hours.innerText = parseInt(offset / 3600, 10) % 60;
+          day.innerText = parseInt(offset / 216000, 10) % 24;
+        }
+      }
+      setInterval(countdown, 1000);
+      countdown();
+    })();
+  </script>
+</body>
+</html>
