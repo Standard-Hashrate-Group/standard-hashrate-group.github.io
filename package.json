@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel serve ./src/*.html",
-    "build": "parcel build ./src/*.html"
+    "build": "node ./scripts/build.js"
   },
   "devDependencies": {
     "@parcel/optimizer-cssnano": "2.0.0-nightly.612",
@@ -27,6 +27,7 @@
     "postcss-custom-properties": "^11.0.0",
     "postcss-import": "^14.0.0",
     "postcss-url": "^10.1.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.1.5"
   },
   "dependencies": {
