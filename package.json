@@ -35,6 +35,7 @@
     "axios": "^0.21.1",
     "jquery": "^3.5.1",
     "micromodal": "^0.4.6",
+    "ncp": "^2.0.0",
     "normalize.css": "^8.0.1",
     "posthtml-include": "^1.6.2",
     "swiper": "^6.4.15"
