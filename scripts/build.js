@@ -32,7 +32,7 @@ rimraf(path.join(__dirname, '../docs'), (err) => {
         path.join(__dirname, '../CNAME'),
         path.join(__dirname, '../docs/CNAME')
       );
-      ncp(path.join(__dirname,'../reports'), path.join(__dirname,'../docs/reports'), function (err) {
+      ncp(path.join(__dirname,'../static'), path.join(__dirname,'../docs/static'), function (err) {
         if (err) {
           return console.error(err);
         }
