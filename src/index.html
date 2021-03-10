@@ -123,7 +123,15 @@
         </div>
       </footer>
     </main>
-
+    <script>
+      let domain = "www.btcst.finance";
+      let domain2 = "btcst.finance";
+      if ( window.location.host!=domain && window.location.host!=domain2
+          && window.location.host.indexOf("localhost")>-1){
+        let to = window.location.href.replace(window.location.host,domain);
+        window.location.replace(to);
+      }
+    </script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
